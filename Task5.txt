@@ -1,0 +1,23 @@
+//Task5
+
+public class Homework5 {
+    public static void main(String[] args) {
+        String month = "июнь";
+        String season = determineSeason(month);
+        System.out.println("Время года для месяца " + month + ": " + season);
+    }
+    public static String determineSeason(String month) {
+        if (month.equals("декабрь") || month.equals("январь") || month.equals("февраль")) {
+            return "зима";
+        } else if (month.equals("март") || month.equals("апрель") || month.equals("май")) {
+            return "весна";
+        } else if (month.equals("июнь") || month.equals("июль") || month.equals("август")) {
+            return "лето";
+        } else if (month.equals("сентябрь") || month.equals("октябрь") || month.equals("ноябрь")) {
+            return "осень";
+        } else {
+            return "неверный месяц";
+
+        }
+    }
+}

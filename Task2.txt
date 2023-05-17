@@ -1,0 +1,16 @@
+//Task2
+
+public class Homework5 {
+
+    public static void main(String[] args) {
+        int number = 9;
+        checkEvenOdd(number);
+    }
+    public static void checkEvenOdd(int number) {
+        if (number % 2 == 0) {
+            System.out.println(number + " число является чётным.");
+        } else {
+            System.out.println(number + "число является нечётным.");
+        }
+    }
+}
